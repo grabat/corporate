@@ -4,7 +4,7 @@ html {
 body {
   color: #333;
   font-size: 1.2rem;
-  font-family: "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+  font-family: sans-serif;
 }
 
 html, body {
@@ -13,6 +13,10 @@ html, body {
 
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
 }
 
 .clearfix::after {
@@ -64,7 +68,6 @@ html, body {
       span {
         display: inline-block;
         transition: all .4s;
-        box-sizing: border-box;
         position: absolute;
         left: 0;
         width: 100%;
@@ -85,11 +88,290 @@ html, body {
         }
       }
     }
-
   }
-
 }
 
+.about_wrapper {
+  width: 1080px;
+  height: 100%;
+  margin: 0 auto;
+
+  .about {
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+
+    .bg-image {
+      height: 503px;
+      width: 700px;
+      background: #fff url('../images/aboutus_700x503.png') no-repeat;
+      background-size: cover;
+    }
+
+    .right_box {
+      position: absolute;
+      top: 0;
+      right: 5%;
+
+      .heading_description {
+        position: relative;
+        margin: 30px 0 30px 15px;
+        font-weight: bold;
+        color: #3374b5;
+        letter-spacing: 2px;
+        font-size: 20px;
+
+        span {
+          display: block;
+          width: 20%;
+          height: 2px;
+          margin-top: 60px;
+          margin-bottom: 50px;
+          background-color: black;
+          border-radius: 4px;
+        }
+      }
+      .description {
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-left: 15px;
+        line-height: 3;
+      }
+    }
+  }
+}
+
+.service {
+
+  position: relative;
+
+  .bg-image {
+    height: 780px;
+    background: #fff url('../images/servicebg_1200x780.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .heading_wrapper {
+    position: absolute;
+    display: inline-block;
+    margin: 0 auto;
+    top: 15%;
+    width: 100%;
+  }
+
+  .heading {
+    color: #fff;
+    font-size: 100px;
+    text-align: center;
+  }
+
+  .heading_description {
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff;
+  }
+
+  span {
+    display: block;
+    width: 5%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 50px auto;
+  }
+
+  .service_description_wrapper {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    top: 52%;
+    left: 100px;
+    width: 1080px;
+
+    .service_image_box {
+      float: left;
+    }
+
+    .service_description_box {
+      float: right;
+      width: 500px;
+      color: #fff;
+
+      .service_title {
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+      }
+
+      .service_description_one {
+        line-height: 2;
+        height: 110px;
+        font-size: 14px;
+        margin-bottom: 40px;
+      }
+
+      .service_description_two {
+        height: 110px;
+        line-height: 2;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.company_wrapper {
+  background-color: #fff;
+
+  .company {
+    width: 1080px;
+    margin: 0 auto;
+
+    .heading_image {
+      margin: 150px 0 100px;
+    }
+
+    .main_box {
+      display: block;
+      margin-bottom: 150px;
+
+      .left_box {
+
+        width: 600px;
+        float: left;
+
+        .company_info {
+
+          a {
+            display: block;
+            color: #333;
+            font-size: 0;
+
+            .key {
+              display: inline-block;
+              width: 25%;
+              letter-spacing: 1px;
+              font-weight: bold;
+              font-size: 12px;
+              border-top: 2px solid #e2e2e2;
+              padding: 25px 10px;
+
+              &.last_key {
+                border-bottom: 2px solid #e2e2e2 ;
+              }
+            }
+
+            .value {
+              font-size: 12px;
+              display: inline-block;
+              width: 75%;
+              letter-spacing: 1px;
+              padding: 25px 10px;
+              border-top: 2px solid #f8f8f8;
+
+              &.last_value {
+                border-bottom: 2px solid #f8f8f8;
+              }
+            }
+          }
+        }
+
+      }
+
+      .right_box {
+        float: right;
+        width: 400px;
+        height: 400px;
+        background-color: black;
+      }
+
+    }
+  }
+}
+
+.contact_wrapper {
+
+  .contact {
+    height: 470px;
+    background: #fff url('../images/contactbg_1200x470.jpg') no-repeat;
+    background-size: cover;
+
+    .main_contents {
+      text-align: center;
+
+      .heading_image {
+        width: 100%;
+        display: block;
+        padding: 100px 0 20px;
+      }
+
+      .contact_description {
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+
+      .sen {
+        display: block;
+        width: 5%;
+        height: 2px;
+        background-color: #333;
+        border-radius: 4px;
+        margin: 50px auto;
+      }
+
+      .tel_box {
+        font-size: 14px;
+        letter-spacing: 1px;
+        padding-bottom: 15px;
+
+        .tel {
+          font-weight: bold;
+        }
+      }
+
+      .mail_box {
+        font-size: 14px;
+        letter-spacing: 1px;
+
+        .mail {
+          font-weight: bold;
+        }
+      }
+
+    }
 
 
+  }
+}
 
+.footer {
+  width: 1080px;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  .main_box {
+    margin-bottom: 30px;
+
+    .left_box {
+      float: left;
+    }
+
+    .right_box {
+      float: right;
+
+      .individual_box {
+        text-align: right;
+        margin: 35px 0 14px;
+      }
+    }
+  }
+}
+
+.footer_blackbox {
+  width: 100vw;
+  margin: unset;
+  height: 20px;
+  background-color: black;
+}
