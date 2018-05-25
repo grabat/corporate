@@ -47,6 +47,36 @@ a:link, a:visited, a:hover, a:active {
     right: 0;
     padding: 30px 25px 15px;
     background-color: #181907; }
+    .header .menu_wrapper .sub-menu_wrapper {
+      position: relative; }
+      .header .menu_wrapper .sub-menu_wrapper .sub-menu {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 1; }
+        .header .menu_wrapper .sub-menu_wrapper .sub-menu .menu-list:hover {
+          background-color: #181907;
+          opacity: 0.2; }
+    .header .menu_wrapper:hover .sub-menu {
+      top: 15px;
+      width: 170px;
+      right: -30px;
+      background-color: #181907;
+      visibility: visible;
+      opacity: 1;
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease; }
+      .header .menu_wrapper:hover .sub-menu .menu-list {
+        border-bottom: 1px solid black; }
+        .header .menu_wrapper:hover .sub-menu .menu-list:last-child {
+          border: unset; }
+      .header .menu_wrapper:hover .sub-menu a {
+        display: inline-block;
+        margin-left: 15px;
+        text-align: center;
+        padding: 20px;
+        color: #fff;
+        font-size: 20px; }
     .header .menu_wrapper .menu-trigger {
       position: relative;
       width: 35px;
@@ -213,8 +243,6 @@ a:link, a:visited, a:hover, a:active {
   background-size: cover; }
   .contact_wrapper .contact .main_contents {
     text-align: center; }
-    .contact_wrapper .contact .main_contents .contact_form {
-      display: none; }
     .contact_wrapper .contact .main_contents .heading_image {
       width: 100%;
       display: block;
@@ -373,55 +401,6 @@ a:link, a:visited, a:hover, a:active {
     .contact_wrapper .contact .main_contents .sen {
       margin: 30px auto;
       width: 13%; }
-    .contact_wrapper .contact .main_contents .tel_box {
-      display: none; }
-    .contact_wrapper .contact .main_contents .mail_box {
-      display: none; }
-    .contact_wrapper .contact .main_contents .contact_form {
-      display: unset;
-      width: 90%;
-      margin: 0 auto 30px; }
-      .contact_wrapper .contact .main_contents .contact_form .contact_info {
-        padding-bottom: 30px;
-        background-color: #d0d0d0; }
-      .contact_wrapper .contact .main_contents .contact_form a .key {
-        text-align: left;
-        margin-left: 18px;
-        padding: 20px 0 10px;
-        font-size: 14px;
-        color: #585858;
-        font-weight: bold; }
-        .contact_wrapper .contact .main_contents .contact_form a .key .select_option {
-          padding: 5px 10px;
-          border-radius: 8px;
-          display: inline-block;
-          margin-right: 15px;
-          font-size: 10px; }
-          .contact_wrapper .contact .main_contents .contact_form a .key .select_option-any {
-            color: #fff;
-            background-color: #666666; }
-          .contact_wrapper .contact .main_contents .contact_form a .key .select_option-required {
-            color: #FA8258;
-            background-color: #FFBF00; }
-      .contact_wrapper .contact .main_contents .contact_form a .value {
-        vertical-align: middle; }
-      .contact_wrapper .contact .main_contents .contact_form a input[type="text"] {
-        width: 300px;
-        height: 40px;
-        padding-left: 20px;
-        color: #585858;
-        font-size: 11px; }
-      .contact_wrapper .contact .main_contents .contact_form input[type="submit"] {
-        width: 300px;
-        height: 50px;
-        line-height: 50px;
-        background-color: #1da06b;
-        margin-top: 20px;
-        color: #fff;
-        font-weight: bold;
-        font-size: 14px;
-        letter-spacing: 3px;
-        border-radius: 8px; }
 
   .footer {
     width: 375px; }

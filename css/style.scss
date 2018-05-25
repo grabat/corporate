@@ -58,6 +58,57 @@ a:link, a:visited, a:hover, a:active {
     padding: 30px 25px 15px;
     background-color: #181907;
 
+    .sub-menu_wrapper {
+      position: relative;
+
+      .sub-menu {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 1;
+
+        .menu-list {
+
+          &:hover {
+            background-color: #181907;
+            opacity: 0.2;
+          }
+        }
+      }
+
+    }
+
+    &:hover {
+
+      .sub-menu {
+        top: 15px;
+        width: 170px;
+        right: -30px;
+        background-color: #181907;
+        visibility: visible;
+        opacity: 1;
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+
+        .menu-list {
+          border-bottom: 1px solid black;
+
+          &:last-child {
+            border: unset;
+          }
+        }
+
+        a {
+          display: inline-block;
+          margin-left: 15px;
+          text-align: center;
+          padding: 20px;
+          color: #fff;
+          font-size: 20px;
+        }
+      }
+    }
+
     .menu-trigger {
       position: relative;
       width: 35px;
@@ -65,6 +116,7 @@ a:link, a:visited, a:hover, a:active {
       display: inline-block;
       transition: all .4s;
       box-sizing: border-box;
+
 
       span {
         display: inline-block;
@@ -301,10 +353,6 @@ a:link, a:visited, a:hover, a:active {
 
     .main_contents {
       text-align: center;
-
-      .contact_form {
-        display: none;
-      }
 
       .heading_image {
         width: 100%;
@@ -585,80 +633,6 @@ a:link, a:visited, a:hover, a:active {
         .sen {
           margin: 30px auto;
           width: 13%;
-        }
-
-        .tel_box {
-          display: none;
-        }
-
-        .mail_box {
-          display: none;
-        }
-
-        .contact_form {
-          display: unset;
-          width: 90%;
-          margin: 0 auto 30px;
-
-          .contact_info {
-            padding-bottom: 30px;
-            background-color: #d0d0d0;
-          }
-
-          a {
-
-            .key {
-              text-align: left;
-              margin-left: 18px;
-              padding: 20px 0 10px;
-              font-size: 14px;
-              color: #585858;
-              font-weight: bold;
-
-              .select_option {
-                padding: 5px 10px;
-                border-radius: 8px;
-                display: inline-block;
-                margin-right: 15px;
-                font-size: 10px;
-
-                &-any {
-                  color: #fff;
-                  background-color: #666666;
-                }
-
-                &-required {
-                  color: #FA8258;
-                  background-color: #FFBF00;
-                }
-              }
-            }
-
-            .value {
-              vertical-align: middle;
-            }
-
-            input[type="text"] {
-              width: 300px;
-              height: 40px;
-              padding-left: 20px;
-              color: #585858;
-              font-size: 11px;
-            }
-          }
-
-          input[type="submit"] {
-            width: 300px;
-            height: 50px;
-            line-height: 50px;
-            background-color: #1da06b;
-            margin-top: 20px;
-            color: #fff;
-            font-weight: bold;
-            font-size: 14px;
-            letter-spacing: 3px;
-            border-radius: 8px;
-          }
         }
       }
     }

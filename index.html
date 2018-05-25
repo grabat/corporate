@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   <title>シングルページレイアウト</title>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -24,6 +23,22 @@
         <span></span>
         <span></span>
       </a>
+      <div class="sub-menu_wrapper">
+        <ul class="sub-menu">
+          <li class="menu-list">
+            <a href="#about">About</a>
+          </li>
+          <li class="menu-list">
+            <a href="#service">Service</a>
+          </li>
+          <li class="menu-list">
+            <a href="#compnay">Compnay</a>
+          </li>
+          <li class="menu-list">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
   <div class="about_wrapper">
@@ -80,37 +95,37 @@
           <div class="left_box">
             <ul class="company_info">
               <li class="company_name">
-                <a href="#">
+                <a href="#compnay">
                   <span class="key">社名</span>
                   <span class="value">テキストテキストテキストテキストテキスト</span>
                 </a>
               </li>
               <li class="company_address">
-                <a href="#">
+                <a href="#compnay">
                   <span class="key">本社オフィス</span>
                   <span class="value">テキストテキストテキストテキストテキスト</span>
                 </a>
               </li>
               <li class="company_tel">
-                <a href="#">
+                <a href="#compnay">
                   <span class="key">TEL</span>
                   <span class="value">テキストテキストテキストテキストテキスト</span>
                 </a>
               </li>
               <li class="company_ceo">
-                <a href="#">
+                <a href="#compnay">
                   <span class="key">代表者</span>
                   <span class="value">池田 凡如 / ikeda kazuyuki</span>
                 </a>
               </li>
               <li class="company_yakuin">
-                <a href="#">
+                <a href="#compnay">
                   <span class="key">役員</span>
                   <span class="value">前田 洸 / maeda kou</span>
                 </a>
               </li>
               <li class="company_content">
-                <a href="#">
+                <a href="#compnay">
                   <span class="key last_key">事業内容</span>
                   <span class="value last_value">テキストテキストテキスト</span>
                 </a>
@@ -132,41 +147,6 @@
         <span class="sen"></span>
         <p class="tel_box"><span class="tel">電話番号</span> : 03-xxxx-xxxx</p>
         <p class="mail_box"><span class="mail">メールアドレス</span> : xxxxxxxxxxxx@xxx.xxx.xx</p>
-        <form class="contact_form">
-          <ul class="contact_info">
-            <li class="company_name">
-              <a href="#">
-                <p class="key"><span class="select_option select_option-any">任意</span><span class="value">会社名</span></p>
-                <input type="text" value="テキストテキストテキストテキストテキスト">
-              </a>
-            </li>
-            <li class="pic">
-              <a href="#">
-                <p class="key"><span class="select_option select_option-required">必須</span><span class="value">ご担当者名</span></p>
-                <input type="text" value="テキストテキストテキストテキストテキスト">
-              </a>
-            </li>
-            <li class="tel">
-              <a href="#">
-                <p class="key"><span class="select_option select_option-any">任意</span><span class="value">電話番号</span></p>
-                <input type="text" value="テキストテキストテキストテキストテキスト">
-              </a>
-            </li>
-            <li class="mail">
-              <a href="#">
-                <p class="key"><span class="select_option select_option-required">必須</span><span class="value">メールアドレス</span></p>
-                <input type="text" value="テキストテキストテキストテキストテキスト">
-              </a>
-            </li>
-            <li class="contact_contents">
-              <a href="#">
-                <p class="key"><span class="select_option select_option-required">必須</span><span class="value">お問い合わせ内容</span></p>
-                <input type="text" value="テキストテキストテキストテキストテキスト">
-              </a>
-            </li>
-          </ul>
-          <input type="submit" value="内容確認">
-        </form>
       </div>
     </section>
   </div>
