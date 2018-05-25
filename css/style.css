@@ -179,18 +179,18 @@ a:link, a:visited, a:hover, a:active {
     .service .service_description_wrapper .service_description_box {
       float: right;
       width: 500px;
-      color: #fff; }
+      color: #d0d0d0; }
       .service .service_description_wrapper .service_description_box .service_title {
         font-size: 25px;
         font-weight: bold;
         letter-spacing: 1px;
         margin-bottom: 20px; }
-      .service .service_description_wrapper .service_description_box .service_description_one {
+      .service .service_description_wrapper .service_description_box p:nth-of-type(1) {
         line-height: 2;
         height: 110px;
         font-size: 14px;
         margin-bottom: 40px; }
-      .service .service_description_wrapper .service_description_box .service_description_two {
+      .service .service_description_wrapper .service_description_box p:nth-of-type(2) {
         height: 110px;
         line-height: 2;
         font-size: 14px; }
@@ -212,25 +212,25 @@ a:link, a:visited, a:hover, a:active {
           display: block;
           color: #333;
           font-size: 0; }
-          .company_wrapper .company .main_box .left_box .company_info a .key {
-            display: inline-block;
-            width: 25%;
-            letter-spacing: 1px;
-            font-weight: bold;
-            font-size: 12px;
-            border-top: 2px solid #e2e2e2;
-            padding: 25px 10px; }
-            .company_wrapper .company .main_box .left_box .company_info a .key.last_key {
-              border-bottom: 2px solid #e2e2e2; }
-          .company_wrapper .company .main_box .left_box .company_info a .value {
-            font-size: 12px;
-            display: inline-block;
-            width: 75%;
-            letter-spacing: 1px;
-            padding: 25px 10px;
-            border-top: 2px solid #f8f8f8; }
-            .company_wrapper .company .main_box .left_box .company_info a .value.last_value {
-              border-bottom: 2px solid #f8f8f8; }
+        .company_wrapper .company .main_box .left_box .company_info-item {
+          display: inline-block;
+          width: 25%;
+          letter-spacing: 1px;
+          font-weight: bold;
+          font-size: 12px;
+          border-top: 2px solid #e2e2e2;
+          padding: 25px 10px; }
+          .company_wrapper .company .main_box .left_box .company_info-item.last_item {
+            border-bottom: 2px solid #e2e2e2; }
+        .company_wrapper .company .main_box .left_box .company_info-item-description {
+          font-size: 12px;
+          display: inline-block;
+          width: 75%;
+          letter-spacing: 1px;
+          padding: 25px 10px;
+          border-top: 2px solid #f8f8f8; }
+          .company_wrapper .company .main_box .left_box .company_info-item-description.last_description {
+            border-bottom: 2px solid #f8f8f8; }
       .company_wrapper .company .main_box .right_box {
         float: right;
         width: 400px;
@@ -371,19 +371,19 @@ a:link, a:visited, a:hover, a:active {
       margin-bottom: 20px; }
       .company_wrapper .company .main_box .left_box {
         width: 100%; }
-        .company_wrapper .company .main_box .left_box .company_info a .key {
+        .company_wrapper .company .main_box .left_box .company_info-item {
           border: unset;
           display: block;
           width: 100%;
           background-color: #eeeeee;
           padding: 10px;
           border-radius: 5px; }
-        .company_wrapper .company .main_box .left_box .company_info a .value {
+        .company_wrapper .company .main_box .left_box .company_info-item-description {
           border: unset;
           width: 90%;
           color: #7f7f7f;
           padding: 20px 0 20px 5px; }
-          .company_wrapper .company .main_box .left_box .company_info a .value.last_value {
+          .company_wrapper .company .main_box .left_box .company_info-item-description.last_description {
             border: unset; }
       .company_wrapper .company .main_box .right_box {
         display: none; }
