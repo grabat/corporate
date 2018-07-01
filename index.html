@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <title>シングルページレイアウト</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo_wrapper">
+      <h1 class="logo">
+        <a href="#">
+          <img class="main_logo" src="./images/mainlogo_150x190.png" alt="コーディング画面">
+        </a>
+      </h1>
+      <p class="logo_description">挑戦し続けることで、新たな扉を開ける</p>
+    </div>
+    <div class="menu_wrapper">
+      <a class="menu-trigger" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <div class="sub-menu_wrapper">
+        <ul class="sub-menu">
+          <li class="menu-list">
+            <a href="#about">About</a>
+          </li>
+          <li class="menu-list">
+            <a href="#service">Service</a>
+          </li>
+          <li class="menu-list">
+            <a href="#compnay">Compnay</a>
+          </li>
+          <li class="menu-list">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="about_wrapper">
+    <section class="about" id="about">
+      <h2 class="bg-image"></h2>
+      <div class="right_box">
+        <h3 class="heading">
+          <img class="heading_image" src="./images/technical_570x175.png" alt="TECHNICALCAPABILITY"></h3>
+        </h3>
+        <h4 class="heading_description">
+          高い技術力で、絶対的な信頼を構築
+          <span></span>
+        </h4>
+        <p class="description">
+          日々、加速度的に進歩していくITの世界。<br>ITの分野では企業ごとに様々な開発が進み、多くのプロダクトが世の中に配信され会社の基盤としてや、私たちの生活など多方面で影響を与えています。<br>そんな中、我々は常に高い技術力を求め続け、新しい価値やプロダクトを生み出すことをミッションとし成長を続けて行きます。<br>Grab Atのメンバーが持つ確かな技術で自社だけでなくクライアントの夢を叶え、硬い信頼関係を築き、世界を席巻できる企業を目指します。
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <div class="service_wrapper">
+    <section class="service" id="service">
+      <h2 class="bg-image"></h2>
+      <div class="heading_wrapper">
+        <h3 class="heading">
+          SERVICE
+        </h3>
+        <p class="heading_description">Grab Atが生み出したサービス</p>
+        <span></span>
+      </div>
+      <div class="service_description_wrapper clearfix">
+        <div class="service_image_box">
+          <img class="service_image" src="./images/serviceimg_500x320.jpg" alt="service画像">
+        </div>
+        <div class="service_description_box">
+          <h4 class="service_title">サービス名</h4>
+          <p>
+            サービスの概要が入ります。サービスの概要が入ります。サービスの概要が入ります。サービスの概要が入ります。サービスの概要が入ります。サービスの概要が入ります。
+          </p>
+          <p>
+            サービスの概要が入ります。サービスの概要が入ります。サービスの概要が入ります。サービスの概要が入ります。サービスの概要が入ります。サービスの概要が入ります。
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+    <div class="company_wrapper">
+      <section class="company" id="compnay">
+        <h2 class="heading">
+          <img class="heading_image" src="./images/company_450x70.png">
+        </h2>
+        <div class="main_box clearfix">
+          <div class="left_box">
+            <ul class="company_info">
+              <li class="company_name">
+                <a href="#compnay">
+                  <span class="company_info-item">社名</span>
+                  <span class="company_info-item-description">テキストテキストテキストテキストテキスト</span>
+                </a>
+              </li>
+              <li class="company_address">
+                <a href="#compnay">
+                  <span class="company_info-item">本社オフィス</span>
+                  <span class="company_info-item-description">テキストテキストテキストテキストテキスト</span>
+                </a>
+              </li>
+              <li class="company_tel">
+                <a href="#compnay">
+                  <span class="company_info-item">TEL</span>
+                  <span class="company_info-item-description">テキストテキストテキストテキストテキスト</span>
+                </a>
+              </li>
+              <li class="company_ceo">
+                <a href="#compnay">
+                  <span class="company_info-item">代表者</span>
+                  <span class="company_info-item-description">池田 凡如 / ikeda kazuyuki</span>
+                </a>
+              </li>
+              <li class="company_yakuin">
+                <a href="#compnay">
+                  <span class="company_info-item">役員</span>
+                  <span class="company_info-item-description">前田 洸 / maeda kou</span>
+                </a>
+              </li>
+              <li class="company_content">
+                <a href="#compnay">
+                  <span class="company_info-item last_item">事業内容</span>
+                  <span class="company_info-item-description last_description">テキストテキストテキスト</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="right_box" id="map"></div>
+        </div>
+      </section>
+    </div>
+
+  <div class="contact_wrapper">
+    <section class="contact" id="contact">
+      <div class="main_contents">
+        <h2 class="heading_image">
+          <img class="contact_image" src="./images/contact_425x70.png" alt="contact_image">
+        </h2>
+        <p class="contact_description">開発や採用などお問い合わせはこちら</p>
+        <span class="sen"></span>
+        <p class="tel_box"><span class="tel">電話番号</span> : 03-xxxx-xxxx</p>
+        <p class="mail_box"><span class="mail">メールアドレス</span> : xxxxxxxxxxxx@xxx.xxx.xx</p>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+
+    <div class="main_box clearfix">
+      <div class="left_box">
+        <img class="logo_url" src="./images/footlogo_200x85.png">
+      </div>
+
+      <div class="right_box">
+        <div class="individual_box">
+          <span class="individual_info">個人情報保護方針</span>
+        </div>
+
+        <p class="description">&copy; Grab At ALL RIGHTS RESERVED.</p>
+      </div>
+    </div>
+
+    <div class="footer_blackbox"></div>
+  </footer>
+
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+  <script>
+
+    function initMap() {
+        var myLatLng = {lat: 35.658581, lng: 139.745433};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14,
+            center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map
+        });
+    }
+    initMap();
+
+  </script>
+
+</body>
+</html>

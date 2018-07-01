@@ -1,0 +1,410 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #333;
+  font-size: 1.2rem;
+  font-family: sans-serif; }
+
+html, body {
+  height: 100%;
+  min-width: 1280px; }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none; }
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.header {
+  width: 100%;
+  height: 100%;
+  background: #151515 url("../images/main_1200x650.jpg") no-repeat;
+  background-size: cover;
+  position: relative; }
+  .header .logo_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 150px;
+    height: 190px; }
+    .header .logo_wrapper .logo_description {
+      margin-top: 30px;
+      margin-left: -30px;
+      width: 250px;
+      color: #fff; }
+  .header .menu_wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px 25px 15px;
+    background-color: #181907; }
+    .header .menu_wrapper .sub-menu_wrapper {
+      position: relative; }
+      .header .menu_wrapper .sub-menu_wrapper .sub-menu {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 1; }
+        .header .menu_wrapper .sub-menu_wrapper .sub-menu .menu-list:hover {
+          background-color: #181907;
+          opacity: 0.2; }
+    .header .menu_wrapper:hover .sub-menu {
+      top: 15px;
+      width: 170px;
+      right: -30px;
+      background-color: #181907;
+      visibility: visible;
+      opacity: 1;
+      -webkit-transition: all .2s ease;
+      transition: all .2s ease; }
+      .header .menu_wrapper:hover .sub-menu .menu-list {
+        border-bottom: 1px solid black; }
+        .header .menu_wrapper:hover .sub-menu .menu-list:last-child {
+          border: unset; }
+      .header .menu_wrapper:hover .sub-menu a {
+        display: inline-block;
+        margin-left: 15px;
+        text-align: center;
+        padding: 20px;
+        color: #fff;
+        font-size: 20px; }
+    .header .menu_wrapper .menu-trigger {
+      position: relative;
+      width: 35px;
+      height: 35px;
+      display: inline-block;
+      transition: all .4s;
+      box-sizing: border-box; }
+      .header .menu_wrapper .menu-trigger span {
+        display: inline-block;
+        transition: all .4s;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 4px; }
+        .header .menu_wrapper .menu-trigger span:nth-of-type(1) {
+          top: 0; }
+        .header .menu_wrapper .menu-trigger span:nth-of-type(2) {
+          top: 11px; }
+        .header .menu_wrapper .menu-trigger span:nth-of-type(3) {
+          top: 22px; }
+
+.about_wrapper {
+  width: 1080px;
+  height: 100%;
+  margin: 0 auto; }
+  .about_wrapper .about {
+    width: 100%;
+    margin-top: 100px;
+    position: relative; }
+    .about_wrapper .about .bg-image {
+      height: 503px;
+      width: 700px;
+      background: #fff url("../images/aboutus_700x503.png") no-repeat;
+      background-size: cover; }
+    .about_wrapper .about .right_box {
+      position: absolute;
+      top: 0;
+      right: 5%; }
+      .about_wrapper .about .right_box .heading_description {
+        position: relative;
+        margin: 30px 0 30px 15px;
+        font-weight: bold;
+        color: #3374b5;
+        letter-spacing: 2px;
+        font-size: 20px; }
+        .about_wrapper .about .right_box .heading_description span {
+          display: block;
+          width: 20%;
+          height: 2px;
+          margin-top: 60px;
+          margin-bottom: 50px;
+          background-color: black;
+          border-radius: 4px; }
+      .about_wrapper .about .right_box .description {
+        width: 570px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-left: 15px;
+        line-height: 3; }
+
+.service {
+  position: relative; }
+  .service .bg-image {
+    height: 780px;
+    background: #fff url("../images/servicebg_1200x780.jpg") no-repeat;
+    background-size: cover; }
+  .service .heading_wrapper {
+    position: absolute;
+    display: inline-block;
+    margin: 0 auto;
+    top: 15%;
+    width: 100%; }
+  .service .heading {
+    color: #fff;
+    font-size: 100px;
+    text-align: center; }
+  .service .heading_description {
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff; }
+  .service span {
+    display: block;
+    width: 5%;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 50px auto; }
+  .service .service_description_wrapper {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    top: 52%;
+    left: 100px;
+    width: 1080px; }
+    .service .service_description_wrapper .service_image_box {
+      float: left; }
+    .service .service_description_wrapper .service_description_box {
+      float: right;
+      width: 500px;
+      color: #d0d0d0; }
+      .service .service_description_wrapper .service_description_box .service_title {
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-bottom: 20px; }
+      .service .service_description_wrapper .service_description_box p:nth-of-type(1) {
+        line-height: 2;
+        height: 110px;
+        font-size: 14px;
+        margin-bottom: 40px; }
+      .service .service_description_wrapper .service_description_box p:nth-of-type(2) {
+        height: 110px;
+        line-height: 2;
+        font-size: 14px; }
+
+.company_wrapper {
+  background-color: #fff; }
+  .company_wrapper .company {
+    width: 1080px;
+    margin: 0 auto; }
+    .company_wrapper .company .heading_image {
+      margin: 150px 0 100px; }
+    .company_wrapper .company .main_box {
+      display: block;
+      margin-bottom: 150px; }
+      .company_wrapper .company .main_box .left_box {
+        width: 600px;
+        float: left; }
+        .company_wrapper .company .main_box .left_box .company_info a {
+          display: block;
+          color: #333;
+          font-size: 0; }
+        .company_wrapper .company .main_box .left_box .company_info-item {
+          display: inline-block;
+          width: 25%;
+          letter-spacing: 1px;
+          font-weight: bold;
+          font-size: 12px;
+          border-top: 2px solid #e2e2e2;
+          padding: 25px 10px; }
+          .company_wrapper .company .main_box .left_box .company_info-item.last_item {
+            border-bottom: 2px solid #e2e2e2; }
+        .company_wrapper .company .main_box .left_box .company_info-item-description {
+          font-size: 12px;
+          display: inline-block;
+          width: 75%;
+          letter-spacing: 1px;
+          padding: 25px 10px;
+          border-top: 2px solid #f8f8f8; }
+          .company_wrapper .company .main_box .left_box .company_info-item-description.last_description {
+            border-bottom: 2px solid #f8f8f8; }
+      .company_wrapper .company .main_box .right_box {
+        float: right;
+        width: 400px;
+        height: 400px;
+        background-color: black; }
+
+.contact_wrapper .contact {
+  height: 470px;
+  background: #fff url("../images/contactbg_1200x470.jpg") no-repeat;
+  background-size: cover; }
+  .contact_wrapper .contact .main_contents {
+    text-align: center; }
+    .contact_wrapper .contact .main_contents .heading_image {
+      width: 100%;
+      display: block;
+      padding: 100px 0 20px; }
+    .contact_wrapper .contact .main_contents .contact_description {
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 2px; }
+    .contact_wrapper .contact .main_contents .sen {
+      display: block;
+      width: 5%;
+      height: 2px;
+      background-color: #333;
+      border-radius: 4px;
+      margin: 50px auto; }
+    .contact_wrapper .contact .main_contents .tel_box {
+      font-size: 14px;
+      letter-spacing: 1px;
+      padding-bottom: 15px; }
+      .contact_wrapper .contact .main_contents .tel_box .tel {
+        font-weight: bold; }
+    .contact_wrapper .contact .main_contents .mail_box {
+      font-size: 14px;
+      letter-spacing: 1px; }
+      .contact_wrapper .contact .main_contents .mail_box .mail {
+        font-weight: bold; }
+
+.footer {
+  margin-top: 50px;
+  position: relative; }
+  .footer .main_box {
+    width: 1080px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    position: relative; }
+    .footer .main_box .left_box {
+      float: left; }
+      .footer .main_box .left_box .logo_url {
+        width: 130px; }
+    .footer .main_box .right_box {
+      float: right; }
+      .footer .main_box .right_box .individual_box {
+        text-align: right;
+        margin: 35px 0 25px; }
+        .footer .main_box .right_box .individual_box .individual_info:before {
+          display: inline-block;
+          content: '';
+          width: 20px;
+          height: 10px;
+          border: 5px solid transparent;
+          border-left: 8px solid black; }
+      .footer .main_box .right_box .description {
+        position: absolute;
+        right: 82px;
+        font-size: 10px; }
+  .footer .footer_blackbox {
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+
+@media screen and (max-width: 375px) {
+  html, body {
+    min-width: 375px; }
+
+  .about_wrapper {
+    width: 90%;
+    margin: 0 auto; }
+    .about_wrapper .about {
+      margin-top: 50px; }
+      .about_wrapper .about .bg-image {
+        display: none; }
+      .about_wrapper .about .right_box {
+        float: unset;
+        position: unset !important; }
+        .about_wrapper .about .right_box .heading .heading_image {
+          width: 300px; }
+        .about_wrapper .about .right_box .heading_description {
+          font-size: 14px;
+          margin: 30px 0; }
+          .about_wrapper .about .right_box .heading_description span {
+            margin: 30px auto 40px; }
+        .about_wrapper .about .right_box .description {
+          width: 338px;
+          margin: unset; }
+
+  .service_wrapper .service .heading_wrapper {
+    top: 3%; }
+    .service_wrapper .service .heading_wrapper .heading {
+      font-size: 50px;
+      font-weight: bold; }
+    .service_wrapper .service .heading_wrapper .heading_description {
+      font-size: 12px; }
+    .service_wrapper .service .heading_wrapper span {
+      width: 30%;
+      margin: 30px auto; }
+  .service_wrapper .service .service_description_wrapper {
+    width: 90%;
+    top: 23%;
+    left: unset; }
+    .service_wrapper .service .service_description_wrapper .service_image {
+      width: 100%;
+      position: absolute;
+      left: 20px; }
+    .service_wrapper .service .service_description_wrapper .service_description_box {
+      float: unset;
+      position: absolute;
+      width: 100%;
+      left: 20px;
+      top: 250px; }
+      .service_wrapper .service .service_description_wrapper .service_description_box .service_description_one {
+        height: 110px;
+        margin-bottom: 30px; }
+      .service_wrapper .service .service_description_wrapper .service_description_box .service_description_two {
+        height: 110px; }
+
+  .company_wrapper .company {
+    width: 90%; }
+    .company_wrapper .company .heading {
+      text-align: center; }
+      .company_wrapper .company .heading .heading_image {
+        width: 70%;
+        margin: 50px auto 40px; }
+    .company_wrapper .company .main_box {
+      margin-bottom: 20px; }
+      .company_wrapper .company .main_box .left_box {
+        width: 100%; }
+        .company_wrapper .company .main_box .left_box .company_info-item {
+          border: unset;
+          display: block;
+          width: 100%;
+          background-color: #eeeeee;
+          padding: 10px;
+          border-radius: 5px; }
+        .company_wrapper .company .main_box .left_box .company_info-item-description {
+          border: unset;
+          width: 90%;
+          color: #7f7f7f;
+          padding: 20px 0 20px 5px; }
+          .company_wrapper .company .main_box .left_box .company_info-item-description.last_description {
+            border: unset; }
+      .company_wrapper .company .main_box .right_box {
+        display: none; }
+
+  .contact_wrapper .contact {
+    height: unset;
+    padding-bottom: 20px; }
+    .contact_wrapper .contact .main_contents .heading_image {
+      padding: 50px 0 15px; }
+      .contact_wrapper .contact .main_contents .heading_image .contact_image {
+        width: 250px; }
+    .contact_wrapper .contact .main_contents .contact_description {
+      font-size: 12px;
+      letter-spacing: 0; }
+    .contact_wrapper .contact .main_contents .sen {
+      margin: 30px auto;
+      width: 13%; }
+
+  .footer {
+    width: 375px; }
+    .footer .main_box {
+      width: 90%; } }
+
+/*# sourceMappingURL=style.css.map */
