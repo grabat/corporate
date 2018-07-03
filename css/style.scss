@@ -83,7 +83,7 @@ a:link, a:visited, a:hover, a:active {
       .sub-menu {
         top: 15px;
         width: 170px;
-        right: -30px;
+        right: -25px;
         background-color: #181907;
         visibility: visible;
         opacity: 1;
@@ -159,6 +159,9 @@ a:link, a:visited, a:hover, a:active {
       width: 700px;
       background: #fff url('../images/aboutus_700x503.png') no-repeat;
       background-size: cover;
+      text-indent:100%;
+      white-space:nowrap;
+      overflow:hidden;
     }
 
     .right_box {
@@ -203,6 +206,9 @@ a:link, a:visited, a:hover, a:active {
     height: 780px;
     background: #fff url('../images/servicebg_1200x780.jpg') no-repeat;
     background-size: cover;
+    text-indent:100%;
+    white-space:nowrap;
+    overflow:hidden;
   }
 
   .heading_wrapper {
