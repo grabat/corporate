@@ -110,12 +110,7 @@ a:link, a:visited, a:hover, a:active {
     position: relative; }
     .about_wrapper .about .bg-image {
       height: 503px;
-      width: 700px;
-      background: #fff url("../images/aboutus_700x503.png") no-repeat;
-      background-size: cover;
-      text-indent: 100%;
-      white-space: nowrap;
-      overflow: hidden; }
+      width: 700px; }
     .about_wrapper .about .right_box {
       position: absolute;
       top: 0;
@@ -147,10 +142,7 @@ a:link, a:visited, a:hover, a:active {
   .service .bg-image {
     height: 780px;
     background: #fff url("../images/servicebg_1200x780.jpg") no-repeat;
-    background-size: cover;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden; }
+    background-size: cover; }
   .service .heading_wrapper {
     position: absolute;
     display: inline-block;
