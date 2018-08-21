@@ -368,7 +368,7 @@ a:link, a:visited, a:hover, a:active {
         .company_wrapper .company .main_box .left_box .company_info-item-description {
           border: unset;
           width: 90%;
-          color: #7f7f7f;
+          color: black;
           padding: 20px 0 20px 5px; }
           .company_wrapper .company .main_box .left_box .company_info-item-description.last_description {
             border: unset; }
