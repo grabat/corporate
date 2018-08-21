@@ -42,7 +42,8 @@ a:link, a:visited, a:hover, a:active {
       width: 250px;
       color: #fff; }
   .header .menu_wrapper {
-    position: absolute;
+    position: fixed;
+    z-index: 5;
     top: 0;
     right: 0;
     padding: 30px 25px 15px;
@@ -274,42 +275,30 @@ a:link, a:visited, a:hover, a:active {
   .footer .main_box {
     width: 1080px;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 15px;
     position: relative; }
     .footer .main_box .left_box {
       float: left; }
       .footer .main_box .left_box .logo_url {
         width: 130px; }
-    .footer .main_box .right_box {
-      float: right; }
-      .footer .main_box .right_box .individual_box {
-        text-align: right;
-        margin: 35px 0 25px; }
-        .footer .main_box .right_box .individual_box .individual_info:before {
-          display: inline-block;
-          content: '';
-          width: 20px;
-          height: 10px;
-          border: 5px solid transparent;
-          border-left: 8px solid black; }
-      .footer .main_box .right_box .description {
-        position: absolute;
-        right: 82px;
-        font-size: 10px; }
+  .footer .description {
+    font-size: 10px;
+    text-align: center;
+    margin-bottom: 15px; }
   .footer .footer_blackbox {
     height: 20px;
     background-color: black;
-    position: absolute;
-    bottom: 0;
     width: 100%; }
 
 @media screen and (max-width: 375px) {
   html, body {
-    min-width: 375px; }
+    min-width: 320px; }
 
   .about_wrapper {
     width: 90%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    height: unset;
+    margin-bottom: 77px; }
     .about_wrapper .about {
       margin-top: 50px; }
       .about_wrapper .about .bg-image {
@@ -318,14 +307,14 @@ a:link, a:visited, a:hover, a:active {
         float: unset;
         position: unset !important; }
         .about_wrapper .about .right_box .heading .heading_image {
-          width: 300px; }
+          width: 100%; }
         .about_wrapper .about .right_box .heading_description {
           font-size: 14px;
           margin: 30px 0; }
           .about_wrapper .about .right_box .heading_description span {
             margin: 30px auto 40px; }
         .about_wrapper .about .right_box .description {
-          width: 338px;
+          width: 100%;
           margin: unset; }
 
   .service_wrapper .service .heading_wrapper {
@@ -345,7 +334,7 @@ a:link, a:visited, a:hover, a:active {
     .service_wrapper .service .service_description_wrapper .service_image {
       width: 100%;
       position: absolute;
-      left: 20px; }
+      left: 5.5%; }
     .service_wrapper .service .service_description_wrapper .service_description_box {
       float: unset;
       position: absolute;
@@ -401,7 +390,7 @@ a:link, a:visited, a:hover, a:active {
       width: 13%; }
 
   .footer {
-    width: 375px; }
+    width: 100%; }
     .footer .main_box {
       width: 90%; } }
 
