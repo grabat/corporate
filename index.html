@@ -3,6 +3,7 @@
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122967681-1"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -50,7 +51,7 @@
         <span></span>
       </a>
       <div class="sub-menu_wrapper">
-        <ul class="sub-menu">
+        <ul class="sub-menu" id="menu_result">
           <li class="menu-list">
             <a href="#about">About</a>
           </li>
@@ -185,6 +186,24 @@
 
     <div class="footer_blackbox"></div>
   </footer>
+
+  <script>
+    $(".menu_wrapper").hover(
+      function () {
+        $('.sub-menu').show();
+      }
+    );
+    $(".menu_wrapper").click(
+      function (event) {
+        $('.sub-menu').show();
+        event.stopPropagation();
+      }
+    );
+    $(".menu-list").click(function(event){
+      $('.sub-menu').hide();
+      event.stopPropagation();
+    })
+  </script>
 
   <script>
     function initMap() {
