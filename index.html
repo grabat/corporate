@@ -195,8 +195,13 @@
     );
     $(".menu_wrapper").click(
       function (event) {
-        $('.sub-menu').show();
-        event.stopPropagation();
+        if ($('.sub-menu').css('display') == 'block') {
+          $('.sub-menu').hide();
+          event.stopPropagation();
+        } else {
+          $('.sub-menu').show();
+          event.stopPropagation();
+        }
       }
     );
     $(".menu-list").click(function(event){
